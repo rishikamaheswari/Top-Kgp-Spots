@@ -96,16 +96,16 @@ a, a:visited
     scale: 1.1;
 }
 
-.random 
+.media 
 {
-    color:white;
+    color: white;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 550;
     padding: 20px 0 0 30px;
 }
 
-.random:hover
+.media:hover
 {
     color: #ccc623;
     scale: 1.1;
@@ -147,14 +147,17 @@ a, a:visited
 .content .heading 
 {
     font-size: 3vw;
-    color: white;
+    color: #fff;
     margin-top: 10px;
     margin-bottom: 20px;
+    font-family: 'Tilt Prism', cursive;
+    font-weight: 200;
 }
 
 .content .subheading 
 {
-    color: #404040;
+    color: #ccc623;
+    font-family: 'Playfair Display', serif;
 }
 
 .content .desc
@@ -162,5 +165,16 @@ a, a:visited
     padding-left: 10px;
     padding-right: 10px;
     line-height: 1.6;
+    font-family: 'Playfair Display', serif;
+    
+}
+h2
+{
+    font-family: 'Tilt Prism', cursive;
+    text-align: center;
+    padding: 20px;
+    font-weight: 200;
+    font-size: 2rem;
+    color: #ccc623;
 }
 
