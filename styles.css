@@ -1,42 +1,68 @@
-/* Reset part */
-
-* {
+*{
     margin: 0px;
     padding: 0px;
 }
-
-/* Header */
-
-body {
-    width: 100%;
-    background-color: antiquewhite;
+body
+{
+    position: relative;
+    background-color:#567189;
+    font-family: 'Merriweather', serif;
 }
 
-header {
-    position: sticky;
+.blueCol
+{
+    position: absolute;
+    width: 33%;
     top: 0;
-    background-color: rgb(0, 221, 255);
-    height: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    bottom: 40px;
+    background-color: #112031;
+}
+.lake
+{
+    position: absolute;
+    margin-left: 100%;
+}
+.main
+{
+    position: absolute;
+    margin-left: 200%;
+    margin-top: 178%;
+}
+.nature
+{
+    position: absolute;
+    margin-left: 100%;
+    margin-top: 355%;
+}
+.left
+{
+    width: 30%;
+    height: 1836px;
 }
 
-.main {
-    margin: 20px auto;
-    min-height: 100vh;
-    text-align: center;
-}
 
-footer {
-    position: sticky;
+.footer
+{
+    height: 20px;
+    width: 33%;
     bottom: 0;
-    background-color: rgb(0, 221, 255);
-    height: 50px;
     display: flex;
+    padding: 10px 0px;
     justify-content: space-evenly;
     align-items: center;
+    background-color: #345B63;
 }
-
-
-/* End of Header */
+.social
+{
+    background-color: lightgray;
+    color: blacks;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.social:hover
+{
+    background-color:darkgray;
+    box-shadow: 2px 2px 5px;
+    transform: scale(1.05);
+    transition: transform 2s, background-color 1s;
+}
