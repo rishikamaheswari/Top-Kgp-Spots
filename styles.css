@@ -4,7 +4,7 @@
 {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; /*padding, border, etc. should be included in your specified height and width*/
 }
 
 body
@@ -28,14 +28,15 @@ a, a:visited
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 5;
+    z-index: 5;         /* greater z-index hides the one with small z-index*/
     padding: 10px 5px;
     background-color: #333333;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
-    font-size: max(15px, 1.35vw);
+    font-size: max(15px, 1.35vw);   /* greater of the two is taken depending upon the device*/
+    /*vw=relative to your total width of your browser. Eg:-if your website is on mobile, if 1.35vw is very small font size, it stops at 15px*/
     font-weight: 540;   /* boldness, 700 default value. <700-less bold. >700-more bold */
 }
 
@@ -53,7 +54,7 @@ a, a:visited
 
 .social 
 {
-    margin: auto 10px;
+    margin: auto 10px;         /*to create space between insta and facebook icons*/
 }
 
 /* Outer */
@@ -61,7 +62,7 @@ a, a:visited
 .outer 
 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /*side-bar and main go to the two ends!*/
 }
 
 /* Sidebar */
@@ -75,8 +76,7 @@ a, a:visited
     padding-top: 30px;
     width: 24vw;
     background-color: black;
-    border-right: 2px dashed #ccc623;
-    z-index: 3;
+    border-right: 2px dashed #ccc623; /*border width, style, colour*/
 }
 
 .sidebar h1 
@@ -121,7 +121,7 @@ a, a:visited
 {
     margin-top: 60px;
     width: calc(100% - 24vw);
-    padding: 10px;
+    padding: 10px; /*for the little black border we have on the sides of the main page */
 }
 
 .spot
@@ -131,16 +131,15 @@ a, a:visited
 
 .spot div 
 {
-    background-color: #111;
     width: 100%;
 }
 
 .content 
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* by default, it is row, i.e., the heart-Gymkhana-description appears by default*/
+    justify-content: center;    
+    align-items: center;    /* depends on flex-direction. If row, then aligns the entire row as per vertical spacing, else, as per horizontal spacing*/
     text-align: center;
 }
 
@@ -164,17 +163,18 @@ a, a:visited
 {
     padding-left: 10px;
     padding-right: 10px;
-    line-height: 1.6;
+    line-height: 1.6;   /*gap between lines*/
     font-family: 'Playfair Display', serif;
     
 }
-h2
+h2  /*Creator Handles*/
 {
     font-family: 'Tilt Prism', cursive;
     text-align: center;
     padding: 20px;
     font-weight: 200;
     font-size: 2rem;
+    /*rem=root element= if someone has preferred font-size on the browser(medium, large, etc.) 2rem means double of that, so it adjusts and helps in responsiveness.*/
     color: #ccc623;
 }
 
