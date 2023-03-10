@@ -26,6 +26,7 @@ a, a:visited
 .header 
 {
     position: fixed;
+    height: 60px;
     width: 100%;
     top: 0;
     z-index: 5;         /* greater z-index hides the one with small z-index*/
@@ -62,38 +63,23 @@ a, a:visited
 .outer 
 {
     display: flex;
-    justify-content: flex-end; /*side-bar and main go to the two ends!*/
+    padding: 65px 5px 0px;
+    gap: 5px;
+    justify-content: center; /*side-bar and main go to the two ends! */
 }
 
 /* Sidebar */
 
-.sidebar 
+.footer 
 {
-    position: fixed;
-    left: 0;
-    top: 50px;
-    height: 100%;
-    padding-top: 30px;
-    width: 24vw;
+    margin-top: 60px;
+    height: 60px;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
     background-color: black;
-    border-right: 2px dashed #ccc623; /*border width, style, colour*/
-}
-
-.sidebar h1 
-{
-    font-size: 3vw;
-    text-align: center;
-    margin-bottom: 30px;
-    text-transform: capitalize;
-}
-
-.sidebar h1:hover
-{
-    color: #ccc623;
-    text-shadow: 2px 2px 5px gray;
-    cursor: pointer;
-    transition: color 0.5s;
-    scale: 1.1;
 }
 
 .media 
@@ -102,31 +88,24 @@ a, a:visited
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 550;
-    padding: 20px 0 0 30px;
+    padding-left: 20px;
 }
 
 .media:hover
 {
     color: #ccc623;
     scale: 1.1;
-    transform: translateX(30px);
-    transition: color 0.5s transform 0.5s;
     cursor: pointer;
 }
 
 
 /* Mainpage */
 
-.main 
-{
-    margin-top: 60px;
-    width: calc(100% - 24vw);
-    padding: 10px; /*for the little black border we have on the sides of the main page */
-}
-
 .spot
 {
     display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .spot div 
@@ -167,11 +146,11 @@ a, a:visited
     font-family: 'Playfair Display', serif;
     
 }
+
 h2  /*Creator Handles*/
 {
     font-family: 'Tilt Prism', cursive;
     text-align: center;
-    padding: 20px;
     font-weight: 200;
     font-size: 2rem;
     /*rem=root element= if someone has preferred font-size on the browser(medium, large, etc.) 2rem means double of that, so it adjusts and helps in responsiveness.*/
